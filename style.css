@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+}
+
+header {
+	color: #fff;
+	text-align: center;
+	font-size: 300%;
+}
+
+main {
+	width: 100vw;
+	display: grid;
+	justify-content: space-evenly;
+	grid-template-columns: auto auto auto;
+}
+
+img {
+	animation: MoveUpDown 4s linear infinite;
+	position: relative;
+}
+
+@keyframes MoveUpDown {
+	0%,
+	100% {
+		bottom: 0px;
+	}
+	50% {
+		bottom: -25vh;
+	}
+}
